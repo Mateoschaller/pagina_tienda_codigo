@@ -1,0 +1,44 @@
+
+/* Estilos para TallaSection */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  color: #000; 
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.select-section {
+  width: 50%;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #9f5e9a;
+  border-radius: 4px;
+  color: #000; 
+  transition: border-color 0.3s ease;
+}
+
+.filter-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid 222;
+  border-radius: 4px;
+  color: #000; 
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Enfocado */
+.filter-section select:focus {
+  outline: none;
+  color: #000; 
+  border-color: #5d2a5f;
+  box-shadow: 0 0 5px #5d2a5f;
+}

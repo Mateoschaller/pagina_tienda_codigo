@@ -1,0 +1,188 @@
+.title-title{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.container-father{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.option-container {
+  margin-bottom: 30px;
+  border: 2px solid #9f5e9a;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo para el contenedor de opciones cuando está enfocado */
+.option-container:focus-within {
+  border-color: #5d2a5f; /* Color verde cuando está enfocado o una opción está seleccionada */
+}
+
+/* Estilo para las etiquetas dentro de las opciones */
+.option-container label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Estilo para los campos de radio */
+.option-container input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Estilo para los mensajes de error */
+.error {
+    width: 25%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    text-align: center;
+}
+.error p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.button-pay {
+  background-color: #4caf50;
+  color: white;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-pay:hover {
+  background-color: #45a049;
+}
+.buton-mp{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.btnnn{
+    width: 25%;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titlee{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.titless {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Estilo para las etiquetas */
+.labb {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Estilo para los campos de entrada */
+.fieldd {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Estilo para la clase de separación de dos */
+.separacion_de_dos {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+/* Estilo para cada elemento dentro de la separación de dos */
+.separacion_de_dos > div {
+  width: 100%; /* Puedes ajustar el ancho según tus necesidades */
+}
+
+/* Estilo adicional para el espacio entre los elementos */
+.separacion_de_dos > div:not(:last-child) {
+  margin-right: 2%; /* Puedes ajustar el margen según tus necesidades */
+}
+.ultimo_cp{
+    width: 48%;
+    margin: 10px;
+    margin-right: 2%;
+}
+
+@media (max-width: 500px) {
+  .title-title{
+    font-size: 1em;
+}
+  .option-container label {
+    font-size: 0.7em;
+  }
+
+  .error {
+    font-size: 0.7em;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    text-align: center;
+  }
+  .error p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .titlee{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.9em;
+  }
+
+
+  .titless {
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  /* Estilo para las etiquetas */
+  .labb {
+    display: block;
+    font-size: 0.5em;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  /* Estilo para los campos de entrada */
+  .fieldd {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}

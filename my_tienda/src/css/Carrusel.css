@@ -1,0 +1,137 @@
+/* Estilos para la lista y los elementos de lista del carrusel */
+ul {
+  list-style: none;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+.imggg {
+  margin-top: -16px;
+}
+
+/* Estilos para el contenedor principal del carrusel */
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px; /* Ajusta la altura según tus preferencias */
+  margin: 10px auto;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el contenedor del slider */
+.slider-container {
+  position: relative;
+  height: 100%; /* Hace que el slider-container ocupe toda la altura del main-container */
+  overflow: hidden;
+}
+
+/* Estilos para los puntos del carrusel */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Estilos para las flechas de navegación */
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: 32px;
+}
+
+.rightArrow {
+  right: 32px;
+}
+
+/* Estilos para el contenedor de imágenes */
+.container-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Estilos para la lista de imágenes dentro del carrusel */
+.container-images ul {
+  display: flex; /* Hace que las imágenes se muestren en línea */
+  transition: transform 0.5s ease-in-out; /* Agrega una transición suave al cambio de imagen */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default list style */
+}
+
+/* Estilos para cada elemento de la lista dentro del carrusel */
+.container-images li {
+  flex: 0 0 100%; /* Hace que cada imagen ocupe el 100% del contenedor */
+}
+
+/* Estilos para el indicador de la imagen activa */
+div.active {
+  background: rgb(255, 255, 255);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+/* Estilos específicos para las imágenes dentro del carrusel */
+.container-images img {
+  width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .container-images img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: 100%; /* La imagen ocupa el 100% de la altura de su contenedor */
+    object-fit: cover; /* La imagen se ajusta manteniendo sus proporciones y cubriendo completamente el contenedor */
+    display: block;
+    margin: 0 auto;
+  }
+  .leftArrow,
+  .rightArrow {
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    font-weight: 700;
+    color: #7b7278;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .leftArrow {
+    top: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .rightArrow {
+    top: 25%;
+    transform: translate(50%, -50%);
+  }
+  .main-container {
+  height: 300px;
+  }
+}
+

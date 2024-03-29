@@ -1,0 +1,218 @@
+.product-card {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px; /* Reducido el tamaño del relleno */
+  text-align: center;
+  box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+  margin-bottom: 20px; /* Añadido margen inferior para separar las filas */
+  position: relative;
+  
+  font-family: 'Open Sans', sans-serif;
+}
+.product-card img {
+  max-width: 100%;
+  max-height: 120px; /* Ajusta la altura máxima según tus preferencias */
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreado */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; /* Agrega un indicador de cursor al pasar sobre la imagen */
+  
+}
+.product-card img.enlarged {
+  transform: scale(2.4); /* Ajusta el valor de escala según tus preferencias */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+.enlarged-image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card a{
+  color:#000;
+}
+.product-card h3{
+  color:#000;
+}
+.product-card p{
+  color: rgb(39, 39, 39);
+}
+.enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.pricee{
+  color: rgb(5, 5, 5);
+  padding: 10px;
+  font-size: 20px;
+}
+.add-car{
+  margin-top: 10px;
+  background-color: #9f5e9a;
+  color: white;
+  border: 2px solid #9f5e9a;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.add-car:hover {
+  background-color: #c78bc3;
+  border: 2px solid #c78bc3; /* Cambia de color al pasar el mouse por encima */
+}
+.talla {
+  margin-top: 5px;
+}
+/* Estilos para el input */
+.talla select {
+  width: 100%;
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #c78bc3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none; /* Para quitar las flechas predeterminadas en algunos navegadores */
+  background-color: #fff;
+  cursor: pointer;
+  color: #000; 
+}
+/* Estilos adicionales para cuando el input está enfocado */
+.talla select:focus {
+  outline: none;
+  border-color: #5d2a5f; /* Cambia el color del borde cuando está enfocado */
+  box-shadow: 0 0 5px #5d2a5f; 
+  color: #000; /* Agrega un efecto de sombra cuando está enfocado */
+}
+.cantidad {
+  margin-top: 5px;
+}
+/* Estilos para el input de cantidad */
+.cantidad input {
+  width: 76%;
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #c78bc3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+/* Estilos adicionales para cuando el input está enfocado */
+.cantidad input:focus {
+  outline: none;
+  border-color: #5d2a5f; /* Cambia el color del borde cuando está enfocado */
+  box-shadow: 0 0 5px #5d2a5f; /* Agrega un efecto de sombra cuando está enfocado */
+}
+.tyc {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column; /* Establece la dirección de apilamiento como columna */
+  align-items: center; /* Centra horizontalmente los elementos en el contenedor */
+}
+
+/* Estilos para el input de talla y cantidad */
+.tyc .talla,
+.tyc .cantidad {
+  width: 100%; /* Establece un ancho del 100% para que ocupen todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+  margin-bottom: 10px; /* Añade un espacio entre los elementos si lo deseas */
+}
+
+/* Media Query para pantallas de hasta 900px */
+@media (max-width: 1200px) {
+  .product-card {
+    padding: 10px; /* Reducido el tamaño del relleno */
+    text-align: center;
+    box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+    margin-bottom: 20px; /* Añadido margen inferior para separar las filas */
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .img-product  {
+    width: 183px;
+    height: 200px; /* Ajusta la altura máxima según tus preferencias */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Borde redondeado */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Agrega un indicador de cursor al pasar sobre la imagen */
+    max-width: none;
+    max-height: none;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .description{
+    font-size: 0.7em;
+  }
+  .tyc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .cantidad input{
+    width: 70%;
+
+  }
+  .talla select{
+    width: 100%;
+  }
+  .product-card img.enlarged {
+  transform: scale(1.6); /* Ajusta el valor de escala según tus preferencias */
+  }
+  .notification p{
+  font-size: 0.5em;
+  }
+  .notification button {
+    background-color: #f5c6cb;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-size: 0.5em;
+  }
+}
+
+.notification {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification button {
+  background-color: #f5c6cb;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 5px 10px;
+  cursor: pointer;
+}

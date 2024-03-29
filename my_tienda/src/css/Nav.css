@@ -1,0 +1,102 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9f5e9a;
+  color: white;
+  padding: 10px 10px; /* Ajusta el espacio interno */
+  position: relative; /* Añadido para el posicionamiento */
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar.fixed {
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.2em; /* Ajusta el tamaño del texto del logotipo */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em; /* Ajusta el tamaño del texto de los enlaces */
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease-in-out;
+  
+  margin: 0 5px; 
+}
+.linkscar{
+  display: flex;
+}
+
+.navbar-links a:hover {
+  color: #5d2a5f;
+}
+
+.cart-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.cart-count {
+  background-color: #5d2a5f;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-dropdown li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+
+  .navbar-links a { 
+    font-size: 0.6em;
+    margin-top: 1px;
+  }
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 0.8em; /* Ajusta el tamaño del texto del logotipo */
+    font-family: 'Montserrat', sans-serif;
+  }
+  .cart-link{
+    margin-left: 10px;
+  }
+  .cart-count {
+    margin-right: 5px;
+  }
+}

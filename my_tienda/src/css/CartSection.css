@@ -1,0 +1,137 @@
+/* CSS en CartSection.css */
+
+.cart-items {
+  width: 75%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+.titt{
+  
+  margin-left: 30px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  width: 80%;
+}
+
+.cart-item img {
+  max-width: 100px;
+  margin-right: 20px; /* Espaciado entre la imagen y el texto */
+  border-radius: 8px; /* Esquinas redondeadas */
+}
+
+.cart-item-details {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-details p {
+  margin: 0;
+}
+
+.cart-item-price button {
+  background-color: #707070;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-item-price button:hover {
+  background-color: #919191;
+}
+
+.cart-summary {
+  padding: 15px;
+  width: 50%;
+  margin-left: 5px;
+  
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cart-summary-details {
+  margin-bottom: 10px;
+}
+
+.cart-summary-total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.clear-cart-button, .buy-button {
+  background-color: #9f5e9a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.clear-cart-button:hover, .buy-button:hover {
+  background-color: #c78bc3;
+}
+/* Media Query para pantallas de hasta 600px */
+@media (max-width: 600px) {
+  p{
+    margin: 1px;
+  }
+  .cart-items {
+    width: 100%;
+  }
+  .titt{
+  text-align: center;
+  }
+
+  .cart-item {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .cart-item img {
+    max-width: 25%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-list{
+    display: block;
+  }
+
+  .cart-item-details {
+    display: block;
+    align-items: center;
+  }
+  .cart-item-price{
+    text-align: center;
+  }
+
+  .cart-item-price button,
+  .clear-cart-button,
+  .buy-button {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .cart-summary{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .buy-button , .clear-cart-button {
+    margin: 10px;
+  }
+}

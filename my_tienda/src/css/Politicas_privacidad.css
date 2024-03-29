@@ -1,0 +1,14 @@
+.texto{
+    color: black;
+    font-size: 1.0em;
+    text-align: start;
+}
+.titles{
+    color: #5d2a5f;
+    font-size: 1.5em;
+    text-align: start;
+}
+.content{
+    margin: 100px;
+    margin-top: 0px;
+}

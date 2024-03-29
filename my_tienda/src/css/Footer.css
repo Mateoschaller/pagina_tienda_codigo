@@ -1,0 +1,76 @@
+/* Footer.css */
+.footer-container {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la columna para dispositivos más pequeños */
+  align-items: center; /* Centra el contenido en dispositivos más pequeños */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section,
+.faq-section,
+.social-section {
+  margin-bottom: 20px; /* Agrega un margen inferior entre las secciones */
+}
+.portafolio{
+  
+  text-decoration:underline;
+}
+.contac{
+  
+  color: rgb(187, 187, 187);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+a {
+  color:rgb(187, 187, 187);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Add font-awesome styles */
+.fa {
+  font-size: 20px;
+  margin-right: 1px;
+}
+h3{
+  text-align: center;
+}
+.social-section ul {
+  align-items: center;
+}
+p{
+  text-align: center;
+}
+
+.social-section i {
+  font-size: 24px; /* Adjust the size as needed */
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  /* Estilos específicos para pantallas más grandes (ajusta según sea necesario) */
+
+  .footer-container {
+    flex-direction: row; /* Vuelve a la dirección de fila para pantallas más grandes */
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+  }
+
+  .contact-section,
+  .faq-section,
+  .social-section {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0; /* Restablece el margen inferior */
+  }
+}
